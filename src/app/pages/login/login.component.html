@@ -2,6 +2,7 @@
     title="Login into your account"
     primaryBtnText="Login now"
     secundaryBtnText="Sign up now"
+    [disablePrimaryBtn]="!loginForm.valid"
     (submit)="submit()"
 >
     <form [formGroup]="loginForm">
@@ -23,6 +24,6 @@
         >
             <img src="/assets/svg/password-icon.svg">
         </app-primary-input>
-        <span>Forgot password?</span>
+        <span>Forgot password</span>
     </form>
 </app-default-login-layout>
